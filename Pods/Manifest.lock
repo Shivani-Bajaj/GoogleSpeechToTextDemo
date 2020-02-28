@@ -1,0 +1,185 @@
+PODS:
+  - "!ProtoCompiler (3.11.2)":
+    - Protobuf (~> 3.0)
+  - "!ProtoCompiler-gRPCPlugin (1.27.0)":
+    - "!ProtoCompiler (= 3.11.2)"
+    - gRPC-ProtoRPC (= 1.27.0)
+  - abseil/algorithm/algorithm (0.20190808.1)
+  - abseil/base/atomic_hook (0.20190808.1)
+  - abseil/base/base (0.20190808.1):
+    - abseil/base/atomic_hook
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/dynamic_annotations
+    - abseil/base/log_severity
+    - abseil/base/spinlock_wait
+    - abseil/meta/type_traits
+  - abseil/base/base_internal (0.20190808.1):
+    - abseil/meta/type_traits
+  - abseil/base/bits (0.20190808.1):
+    - abseil/base/core_headers
+  - abseil/base/config (0.20190808.1)
+  - abseil/base/core_headers (0.20190808.1):
+    - abseil/base/config
+  - abseil/base/dynamic_annotations (0.20190808.1)
+  - abseil/base/endian (0.20190808.1):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/log_severity (0.20190808.1):
+    - abseil/base/core_headers
+  - abseil/base/spinlock_wait (0.20190808.1):
+    - abseil/base/core_headers
+  - abseil/base/throw_delegate (0.20190808.1):
+    - abseil/base/base
+    - abseil/base/config
+  - abseil/container/compressed_tuple (0.20190808.1):
+    - abseil/utility/utility
+  - abseil/container/inlined_vector (0.20190808.1):
+    - abseil/algorithm/algorithm
+    - abseil/base/core_headers
+    - abseil/base/throw_delegate
+    - abseil/container/inlined_vector_internal
+    - abseil/memory/memory
+  - abseil/container/inlined_vector_internal (0.20190808.1):
+    - abseil/base/core_headers
+    - abseil/container/compressed_tuple
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/types/span
+  - abseil/memory/memory (0.20190808.1):
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+  - abseil/meta/type_traits (0.20190808.1):
+    - abseil/base/config
+  - abseil/numeric/int128 (0.20190808.1):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/strings/internal (0.20190808.1):
+    - abseil/base/core_headers
+    - abseil/base/endian
+    - abseil/meta/type_traits
+  - abseil/strings/strings (0.20190808.1):
+    - abseil/base/base
+    - abseil/base/bits
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/endian
+    - abseil/base/throw_delegate
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/numeric/int128
+    - abseil/strings/internal
+  - abseil/types/bad_optional_access (0.20190808.1):
+    - abseil/base/base
+    - abseil/base/config
+  - abseil/types/optional (0.20190808.1):
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/types/bad_optional_access
+    - abseil/utility/utility
+  - abseil/types/span (0.20190808.1):
+    - abseil/algorithm/algorithm
+    - abseil/base/core_headers
+    - abseil/base/throw_delegate
+    - abseil/meta/type_traits
+  - abseil/utility/utility (0.20190808.1):
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/meta/type_traits
+  - BoringSSL-GRPC (0.0.5):
+    - BoringSSL-GRPC/Implementation (= 0.0.5)
+    - BoringSSL-GRPC/Interface (= 0.0.5)
+  - BoringSSL-GRPC/Implementation (0.0.5):
+    - BoringSSL-GRPC/Interface (= 0.0.5)
+  - BoringSSL-GRPC/Interface (0.0.5)
+  - googleapis (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.0)"
+    - googleapis/Messages (= 0.0.1)
+    - googleapis/Services (= 0.0.1)
+  - googleapis/Messages (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.0)"
+    - Protobuf
+  - googleapis/Services (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.0)"
+    - googleapis/Messages
+    - gRPC-ProtoRPC
+  - gRPC-Core (1.27.0):
+    - gRPC-Core/Implementation (= 1.27.0)
+    - gRPC-Core/Interface (= 1.27.0)
+  - gRPC-Core/Implementation (1.27.0):
+    - abseil/container/inlined_vector (= 0.20190808.1)
+    - abseil/strings/strings (= 0.20190808.1)
+    - abseil/types/optional (= 0.20190808.1)
+    - BoringSSL-GRPC (= 0.0.5)
+    - gRPC-Core/Interface (= 1.27.0)
+  - gRPC-Core/Interface (1.27.0)
+  - gRPC-ProtoRPC (1.27.0):
+    - gRPC-ProtoRPC/Legacy (= 1.27.0)
+    - gRPC-ProtoRPC/Legacy-Header (= 1.27.0)
+    - gRPC-ProtoRPC/Main (= 1.27.0)
+  - gRPC-ProtoRPC/Legacy (1.27.0):
+    - gRPC-ProtoRPC/Legacy-Header (= 1.27.0)
+    - gRPC-ProtoRPC/Main (= 1.27.0)
+    - gRPC-RxLibrary (= 1.27.0)
+    - gRPC/GRPCCore (= 1.27.0)
+    - Protobuf (~> 3.0)
+  - gRPC-ProtoRPC/Legacy-Header (1.27.0)
+  - gRPC-ProtoRPC/Main (1.27.0):
+    - gRPC-ProtoRPC/Legacy-Header (= 1.27.0)
+    - gRPC/Interface (= 1.27.0)
+    - Protobuf (~> 3.0)
+  - gRPC-RxLibrary (1.27.0):
+    - gRPC-RxLibrary/Implementation (= 1.27.0)
+    - gRPC-RxLibrary/Interface (= 1.27.0)
+  - gRPC-RxLibrary/Implementation (1.27.0):
+    - gRPC-RxLibrary/Interface
+  - gRPC-RxLibrary/Interface (1.27.0)
+  - gRPC/GRPCCore (1.27.0):
+    - gRPC-Core (= 1.27.0)
+    - gRPC-RxLibrary (= 1.27.0)
+    - gRPC/Interface (= 1.27.0)
+    - gRPC/Interface-Legacy (= 1.27.0)
+  - gRPC/Interface (1.27.0):
+    - gRPC/Interface-Legacy (= 1.27.0)
+  - gRPC/Interface-Legacy (1.27.0):
+    - gRPC-RxLibrary/Interface (= 1.27.0)
+  - Protobuf (3.11.4)
+
+DEPENDENCIES:
+  - googleapis (from `.`)
+
+SPEC REPOS:
+  trunk:
+    - "!ProtoCompiler"
+    - "!ProtoCompiler-gRPCPlugin"
+    - abseil
+    - BoringSSL-GRPC
+    - gRPC
+    - gRPC-Core
+    - gRPC-ProtoRPC
+    - gRPC-RxLibrary
+    - Protobuf
+
+EXTERNAL SOURCES:
+  googleapis:
+    :path: "."
+
+SPEC CHECKSUMS:
+  "!ProtoCompiler": da24805d8339f352ec7bb4cb4df2db6a3be45665
+  "!ProtoCompiler-gRPCPlugin": f391d1b326229c16a05ca3d2611f28d66b9ed9fb
+  abseil: 88704f97dbfdb436f29ea8deb788a46c5115f581
+  BoringSSL-GRPC: 8f2c6b5fbae71d1f3aabb787a52fd4929d1eef33
+  googleapis: aca6318130c96d3f627ec57af5eb3c9f1dbcf963
+  gRPC: 5001a90441b0bbb1d48afa36c9461ebc381bcb6a
+  gRPC-Core: 1f6b96422c8978621b199d30be9d8254d873f307
+  gRPC-ProtoRPC: 674a6d9bbf1e184077651d7412b9d5e76a8fb36b
+  gRPC-RxLibrary: 46eef33e55e9cf6b7a21cb60dd034175a38ece40
+  Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
+
+PODFILE CHECKSUM: f1e08b2b39e29660d3444e656d6fe0a44454a9a0
+
+COCOAPODS: 1.8.4
